@@ -1,0 +1,137 @@
+/* Hero */
+.receta-hero {
+    padding-top: 40px; 
+    background-color: #a7846b; 
+    width: 100%;
+    padding-bottom: 40px;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1400px; 
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0; 
+    align-items: stretch; 
+    min-height: 420px; 
+    padding: 0 40px; 
+    
+}
+
+/* Bloque izquierda */
+.hero-text {
+    background-color: #4A0E1A;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text .tiempo {
+    display: inline-block;
+    width: fit-content;
+    border: 1px solid #c9b46a;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+
+.hero-text h1 {
+    font-family: "Courgette", cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text .subtitulo {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+/* Imagen derecha */
+.hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Parte de abajo */
+
+.recetas-abajo {
+    background-color: antiquewhite;
+    padding: 40px 0;
+}
+
+.recetas-abajo h2 {
+    color: #6d1f2f; 
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.recetas-abajo .ingredientes-card {
+    background: white;
+    border: 2px solid #6d1f2f; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.ingredientes-card .list-group-item {
+    border: none;
+    border-bottom: 1px solid #e6d7c7;
+    font-size: 0.95rem;
+    padding: 10px 5px;
+}
+
+.ingredientes-card .list-group-item:last-child {
+    border-bottom: none;
+}
+
+/*  Lista de preparación */
+.recetas-abajo ul li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;      
+    line-height: 1.55;
+    color: #6d1f2f;         
+    font-weight: 500;      
+}
+
+/* Bullets */
+.recetas-abajo ul li::marker {
+    color: #6d1f2f;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+
+    .hero-container {
+        grid-template-columns: 1fr;  
+        padding: 0 20px;
+    }
+
+    .hero-text {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-img {
+        height: 260px; 
+    }
+
+    .hero-img img {
+        height: 100%;
+    }
+}

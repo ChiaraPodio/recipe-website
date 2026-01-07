@@ -1,0 +1,59 @@
+/*Historia */
+
+/* Contenedor general */
+.historia-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+/* Bloques */
+.historia-bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+/* Textos */
+.historia-anio {
+  font-size: 2.8rem;
+  font-family: "Courgette", cursive;
+  margin-bottom: 10px;
+}
+
+.historia-subtitulo {
+  font-size: 1.8rem;
+  font-family: "Courgette", cursive;
+  margin-bottom: 20px;
+}
+
+.historia-parrafo {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Collage */
+.historia-collage img {
+  width: 100%;
+  max-width: 1700px;
+  padding-bottom: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .historia-bloque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historia-texto {
+    text-align: center;
+  }
+
+  .historia-collage img {
+    max-width: 60%;
+  }
+}

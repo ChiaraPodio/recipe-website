@@ -1,0 +1,99 @@
+/*Formulario*/
+
+/* Fondo general */
+.suscripcion-section { /* bordó elegante */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor */
+.suscripcion-container {
+    background-color: #7a1b33;
+    backdrop-filter: blur(6px);
+    padding: 40px;
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    border: 1px solid #ffffff30;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Títulos */
+.suscripcion-titulo {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.suscripcion-subtitulo {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* Inputs */
+.label {
+    margin-top: 15px;
+    font-weight: 600;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* Radios */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    margin-top: 5px;
+}
+
+/* Checkbox */
+.checkbox {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botón */
+.btn-suscribir {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffb0c8;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-suscribir:hover {
+    background-color: white;
+}
+
+/* Mensaje éxito */
+.mensaje-exito {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.oculto {
+    display: none;
+}
+

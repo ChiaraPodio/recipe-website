@@ -1,0 +1,590 @@
+{
+	"info": {
+		"_postman_id": "09a62eb0-bc1a-4fa0-81e8-ceedf8f9b352",
+		"name": "RecetasDeLaAbuela",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48420810",
+		"_collection_link": "https://kikipodio-5378297.postman.co/workspace/Chiara's-Workspace~4730ae0c-89b4-4d7f-8fc9-38d5fa2aabcb/collection/48420810-09a62eb0-bc1a-4fa0-81e8-ceedf8f9b352?action=share&source=collection_link&creator=48420810"
+	},
+	"item": [
+		{
+			"name": "Post Producto 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\" : \"Libro Recetas de la Abuela\",\n        \"descripcion\" : \"¡Conseguí nuestro libro con recetas exclusivas! Más de 170 cenas, guarniciones y postres para disfrutar en familia. No importa qué tanto sepas de cocina, ya seas principiante o un chef experimentado, aquí vas a encontrar inspiración en cada página.\",\n        \"marca\" : \"Planeta\",\n        \"stock\" : 100,\n        \"precioUnitarioActual\" : 32800\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Producto 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\" : \"Set de Cucharas Medidoras\",\n        \"descripcion\" : \"Lleva la precisión y la eleancia a tu cocina con este juego de cucharas de madera y bronce. Este set está diseñado para quienes valoran tanto la funcionalidad como la estética, combinando la resistencia del bronce con la calidez de la madera.\",\n        \"marca\" : \"Vitta & Co\",\n        \"stock\" : 50,\n        \"precioUnitarioActual\" : 25000\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Torta frita\",\n  \"descripcion\": \"Tradicional y sencilla, la torta frita es la compañía ideal para un día de lluvia.\",\n  \"tiempo_preparacion\": \"50 minutos\",\n  \"categoria\": \"dulce\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"harina\",\n      \"cantidad\": 500,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"grasa o manteca\",\n      \"cantidad\": 2,\n      \"unidad_medida\": \"cdas\"\n    },\n    {\n      \"nombre\": \"sal\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"cda\"\n    },\n    {\n      \"nombre\": \"polvo de hornear\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"cdta\"\n    },\n    {\n      \"nombre\": \"agua\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"ml\"\n    },\n    {\n      \"nombre\": \"aceite\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"ml\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Mezclar los secos.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Agregar grasa y agua hasta formar masa.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Amasar, estirar y cortar círculos con un agujero en el medio.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Freír hasta dorar y espolvorear con azúcar\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Ñoquis de Calabaza con Salsa Rosa\",\n  \"descripcion\": \"Ñoquis suaves y livianos, servidos con una salsa cremosa y rápida.\",\n  \"tiempo_preparacion\": \"55 minutos\",\n  \"categoria\": \"salada\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"calabaza cocida\",\n      \"cantidad\": 500,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"harina 0000\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"huevo\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"queso rallado\",\n      \"cantidad\": 40,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"sal\",\n      \"cantidad\": 5,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"pimienta\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"pizca\"\n    },\n    {\n      \"nombre\": \"salsa de tomate\",\n      \"cantidad\": 300,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"crema de leche\",\n      \"cantidad\": 150,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"cebolla\",\n      \"cantidad\": 80,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"aceite de oliva\",\n      \"cantidad\": 15,\n      \"unidad_medida\": \"ml\"\n    },\n    {\n      \"nombre\": \"nuez moscada\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"gramo\"\n    }\n\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Cortá la calabaza y cocinála al horno o al vapor hasta que esté bien blanda.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Pisala y dejala enfriar para que pierda humedad.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Mezclá el puré con el huevo, el queso rallado, sal, pimienta y nuez moscada.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Agregá la harina de a poco hasta formar una masa suave, que no se pegue mucho pero no quede dura.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Hacé tiras largas y cortá cubitos de 2 cm.\"\n    },\n    {\n        \"numero_paso\" : 6,\n        \"descripcion\" : \"Echalos en agua hirviendo con sal y retiralos cuando suban a la superficie (1–2 min).\"\n    },\n    {\n        \"numero_paso\" : 7,\n        \"descripcion\" : \"Rehogá la cebolla picada en aceite.\"\n    },\n    {\n        \"numero_paso\" : 8,\n        \"descripcion\" : \"Agregá la salsa de tomate y cociná 5 minutos.\"\n    },\n    {\n        \"numero_paso\" : 9,\n        \"descripcion\" : \"Bajá el fuego, sumá la crema y salpimentá a gusto.\"\n    },\n    {\n        \"numero_paso\" : 10,\n        \"descripcion\" : \"Mezclá los ñoquis con la salsa y terminá con queso rallado.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Churros caseros\",\n  \"descripcion\": \"Crujientes por fuera y tiernos por dentro, ideales para acompañar unos buenos mates\",\n  \"tiempo_preparacion\": \"50 minutos\",\n  \"categoria\": \"dulce\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"agua\",\n      \"cantidad\": 250,\n      \"unidad_medida\": \"mililitros\"\n    },\n    {\n      \"nombre\": \"harina\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"sal\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"cdta\"\n    },\n    {\n      \"nombre\": \"Dulce de leche repostero\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"azúcar\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"aceite\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"mililitros\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Hervir agua con sal, agregar harina y mezclar hasta formar una masa espesa.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Colocar en manga con boquilla rizada y formar los churros.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Freír en aceite caliente hasta dorar.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Dejar enfriar un poco y rellenar con dulce de leche usando una manga.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Espolvorear con azúcar.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Sopa de Carne y Verduras Soyo\",\n  \"descripcion\": \"Una sopa reconfortante y nutritiva hecha con carne molida y una mezcla de verduras frescas.\",\n  \"tiempo_preparacion\": \"45 minutos\",\n  \"categoria\": \"salada\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"carne molida\",\n      \"cantidad\": 300,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"papa\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"zanahoria\",\n      \"cantidad\": 2,\n      \"unidad_medida\": \"unidades\"\n    },\n    {\n      \"nombre\": \"zapallo\",\n      \"cantidad\": 150,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"morrón rojo\",\n      \"cantidad\": 70,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"tomate\",\n      \"cantidad\": 30,\n      \"unidad_medida\": \"gramos\"\n    },\n     {\n      \"nombre\": \"aceite\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"cucharada\"\n    },\n     {\n      \"nombre\": \"caldo\",\n      \"cantidad\": 1.5,\n      \"unidad_medida\": \"litros\"\n    },\n    {\n      \"nombre\": \"cebolla:\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"ajo\",\n      \"cantidad\": 2,\n      \"unidad_medida\": \"dientes\"\n    },\n    {\n      \"nombre\": \"perejil fresco:\",\n      \"cantidad\": 10,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"orégano seco\",\n      \"cantidad\": 3,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"sal\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"pizca\"\n    },\n    {\n      \"nombre\": \"pimienta\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"pizca\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"En un bowl, colocá la carne molida.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Agregá la cebolla picada bien chiquita, el ajo triturado, el perejil, el orégano, sal y pimienta.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Con las manos o un mortero, machacá todo hasta formar una mezcla pastosa (este es el “soyo”) y reservá.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Pelá y cortá en cubitos la papa, zanahoria y el zapallo.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Picá el tomate y el morrón.\"\n    },\n    {\n        \"numero_paso\" : 6,\n        \"descripcion\" : \"En una olla grande, calentá el aceite.\"\n    },\n    {\n        \"numero_paso\" : 7,\n        \"descripcion\" : \"Rehogá el tomate, el morrón y un poco de cebolla. Cociná hasta que esté todo bien tierno.\"\n    },\n    {\n        \"numero_paso\" : 8,\n        \"descripcion\" : \"Incorporá la mezcla de soyo en la olla y desmenuzala con una cuchara mientras se cocina. Dorá unos minutos hasta que la carne cambie de color.\"\n    },\n    {\n        \"numero_paso\" : 9,\n        \"descripcion\" : \"Agregá las verduras (papa, zanahoria y zapallo).\"\n    },\n    {\n        \"numero_paso\" : 10,\n        \"descripcion\" : \"Verté el agua o caldo y cociná a fuego medio por 20–25 minutos, hasta que las verduras estén tiernas y la sopa espese.\"\n    },\n    {\n        \"numero_paso\" : 11,\n        \"descripcion\" : \"Serví caliente con perejil picado por encima.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Torta Pastafrola\",\n  \"descripcion\": \"Aprende a preparar esta exquisita Pastafrola rellena de membrillo\",\n  \"tiempo_preparacion\": \"40 minutos\",\n  \"categoria\": \"dulce\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"harina leudante\",\n      \"cantidad\": 300,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"manteca\",\n      \"cantidad\": 150,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"azúcar\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"huevo\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"esencia de vainilla\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"cdta\"\n    },\n    {\n      \"nombre\": \"dulce de membrillo\",\n      \"cantidad\": 400,\n      \"unidad_medida\": \"gramos\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Mezclar harina, azúcar, polvo de hornear y manteca hasta formar un arenado.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Agregar el huevo y la vainilla. Unir sin amasar.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Reservar ¼ de la masa y estirar el resto en una tartera enmantecada.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Derretir el membrillo con un poco de agua y esparcir sobre la base.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Hacer tiras con la masa reservada y formar un enrejado.\"\n    },\n    {\n        \"numero_paso\" : 6,\n        \"descripcion\" : \"Hornear a 180 °C por 30-35 minutos, hasta dorar.\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Alfajores de maicena\",\n  \"descripcion\": \"¡Estos alfajores rellenos de dulce de leche son un verdadero mimo para el paladar!\",\n  \"tiempo_preparacion\": \"1 hora\",\n  \"categoria\": \"dulce\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"maicena\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"harina\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"manteca\",\n      \"cantidad\": 150,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"yemas\",\n      \"cantidad\": 2,\n      \"unidad_medida\": \"unidades\"\n    },\n    {\n      \"nombre\": \"esencia de vainilla\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"cdta\"\n    },\n    {\n      \"nombre\": \"dulce de leche\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"coco rallado\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Batir manteca con azúcar, agregar yemas y vainilla.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Sumar secos y formar una masa suave.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Estirar, cortar tapitas y hornear 10 min a 180 °C.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Rellenar con dulce de leche y pasar los bordes por coco.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Canelones de verdura y ricota\",\n  \"descripcion\": \"Una receta ideal para almuerzos especiales o domingos en familia\",\n  \"tiempo_preparacion\": \"40 minutos\",\n  \"categoria\": \"salada\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"panqueques\",\n      \"cantidad\": 12,\n      \"unidad_medida\": \"unidades\"\n    },\n    {\n      \"nombre\": \"espinaca cocida\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"ricota\",\n      \"cantidad\": 350,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"huevo\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"cebolla\",\n      \"cantidad\": 80,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"ajo\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"diente\"\n    },\n    {\n      \"nombre\": \"queso rallado\",\n      \"cantidad\": 50,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"sal y pimienta\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"pizca\"\n    },\n    {\n      \"nombre\": \"nuez moscada\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"gramo\"\n    },\n    {\n      \"nombre\": \"aceite o manteca\",\n      \"cantidad\": 15,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"salsa blanca\",\n      \"cantidad\": 400,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"salsa de tomate\",\n      \"cantidad\": 300,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"mozzarella o queso para gratinar\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    }\n\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Picar la espinaca cocida y escurrida.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"En una sartén, rehogar la cebolla y el ajo en aceite o manteca.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Mezclar la espinaca picada con la ricota, el huevo, el queso rallado, sal, pimienta y nuez moscad e integrar hasta obtener un relleno homogéneo.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Colocar una porción de relleno en cada panqueque.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Enrollar y acomodar en una bandeja para horno con una base de salsa blanca o tomate.\"\n    },\n    {\n        \"numero_paso\" : 6,\n        \"descripcion\" : \"Cubrir los canelones con la mezcla de salsa blanca y salsa de tomate y agregar queso por arriba.\"\n    },\n    {\n        \"numero_paso\" : 7,\n        \"descripcion\" : \"Hornear a 180 °C durante 25–30 minutos, hasta que gratinen.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Risotto 4 Quesos\",\n  \"descripcion\": \"Un risotto cremoso y súper fácil\",\n  \"tiempo_preparacion\": \"40 minutos\",\n  \"categoria\": \"salada\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"arroz arborio o carnaroli\",\n      \"cantidad\": 300,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"cebolla\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"ajo\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"diente\"\n    },\n    {\n      \"nombre\": \"manteca\",\n      \"cantidad\": 40,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"aceite de oliva\",\n      \"cantidad\": 15,\n      \"unidad_medida\": \"ml\"\n    },\n    {\n      \"nombre\": \"vino blanco\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"ml\"\n    },\n    {\n      \"nombre\": \"caldo de verduras o pollo\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"litro\"\n    },\n    {\n      \"nombre\": \"crema de leche\",\n      \"cantidad\": 120,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"queso parmesano rallado\",\n      \"cantidad\": 50,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"queso azul (roquefort o gorgonzola)\",\n      \"cantidad\": 40,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"queso mozzarella\",\n      \"cantidad\": 80,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"queso crema o mascarpone\",\n      \"cantidad\": 70,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"sal y pimienta\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"pizca\"\n    }\n\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Calentá el caldo en una olla y mantenelo caliente durante toda la preparación.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"En otra olla, derretí la manteca con el aceite.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Agregá la cebolla picada fina y rehogá hasta que esté transparente.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Sumá el ajo y cociná 1 minuto más.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Incorporá el arroz sin lavar y mezclá para que se nacare (que se ponga brillante).\"\n    },\n    {\n        \"numero_paso\" : 6,\n        \"descripcion\" : \"Agregá el vino blanco y dejá que se evapore el alcohol.\"\n    },\n    {\n        \"numero_paso\" : 7,\n        \"descripcion\" : \"Incorporá un cucharón de caldo caliente y mezclá constantemente. Cuando se absorba, agregá otro cucharón.\"\n    },\n    {\n        \"numero_paso\" : 8,\n        \"descripcion\" : \"Repetí este proceso durante unos 18–20 minutos, hasta que el arroz esté cremoso pero al dente.\"\n    },\n    {\n        \"numero_paso\" : 9,\n        \"descripcion\" : \"Bajá el fuego al mínimo y sumá la crema de leche.\"\n    },\n    {\n        \"numero_paso\" : 10,\n        \"descripcion\" : \"Agregá los cuatro quesos: parmesano, azul, mozzarella y queso crema/mascarpone y mezclá hasta que todo quede bien fundido y cremoso.\"\n    },\n    {\n        \"numero_paso\" : 11,\n        \"descripcion\" : \"Dejá reposar 2 minutos antes de servir.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Budín de limón\",\n  \"descripcion\": \"Esponjoso, húmedo y con el toque justo de limón: perfecto para desayunos o meriendas\",\n  \"tiempo_preparacion\": \"30 minutos\",\n  \"categoria\": \"dulce\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"harina leudante\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"azúcar\",\n      \"cantidad\": 150,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"huevos\",\n      \"cantidad\": 2,\n      \"unidad_medida\": \"unidades\"\n    },\n    {\n      \"nombre\": \"aceite\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"ml\"\n    },\n    {\n      \"nombre\": \"jugo y ralladura de limón\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"leche\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"ml\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Batir los huevos con el azúcar.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Agregar el aceite, la leche, el jugo y la ralladura de limón.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Incorporar los secos tamizados y mezclar.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Volcar en molde enmantecado y hornear 35-40 min a 180 °C.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Receta 10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Pastel de papa\",\n  \"descripcion\": \"Crujiente y sabroso, un plato típico que nunca falla\",\n  \"tiempo_preparacion\": \"1 hora\",\n  \"categoria\": \"salada\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"papas\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"kg\"\n    },\n    {\n      \"nombre\": \"carne picada\",\n      \"cantidad\": 500,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"cebolla\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"morrón\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"huevos duros\",\n      \"cantidad\": 2,\n      \"unidad_medida\": \"unidades\"\n    },\n    {\n      \"nombre\": \"leche\",\n      \"cantidad\": 120,\n      \"unidad_medida\": \"ml\"\n    },\n    {\n      \"nombre\": \"manteca\",\n      \"cantidad\": 20,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"sal y pimienta\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"pizca\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Hervir las papas y hacerlas puré.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"Agregar la leche y la manteca derretida.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Saltear la carne con la cebolla, el morrón y los condimentos.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"En una fuente armar una base de puré, luego agregar carne y huevo picado.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Cubrir con más puré y opcionalmente espolvorear queso.\"\n    },\n    {\n        \"numero_paso\" : 6,\n        \"descripcion\" : \"Llevar al horno a 180 °C durante 25–30 minutos, hasta que gratine.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Producto 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\" : \"Delantal Floreado Vintage (talle único)\",\n        \"descripcion\" : \"Es la elección ideal para personas que aprecian el estilo y la belleza en la cocina. Confeccionado en suave algodón, garantiza comodidad y facilidad de movimiento. Cuenta con dos prácticos bolsillos.\",\n        \"marca\" : \"Yadilun\",\n        \"stock\" : 15,\n        \"precioUnitarioActual\" : 27600\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post receta 11",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Rolls de Canela\",\n  \"descripcion\": \"Suaves, esponjosos y perfumados con canela, perfectos para desayunos o meriendas.\",\n  \"tiempo_preparacion\": \"2 horas 30 minutos\",\n  \"categoria\": \"dulce\",\n  \"listaIngredientes\": [\n    {\n      \"nombre\": \"harina 0000\",\n      \"cantidad\": 450,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"leche tibia\",\n      \"cantidad\": 200,\n      \"unidad_medida\": \"ml\"\n    },\n    {\n      \"nombre\": \"manteca\",\n      \"cantidad\": 160,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"azúcar blanca\",\n      \"cantidad\": 70,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"azúcar negra\",\n      \"cantidad\": 120,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"azúcar impalpable\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"huevo\",\n      \"cantidad\": 1,\n      \"unidad_medida\": \"unidad\"\n    },\n    {\n      \"nombre\": \"levadura seca\",\n      \"cantidad\": 7,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"sal\",\n      \"cantidad\": 5,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"canela en polvo\",\n      \"cantidad\": 10,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"queso crema\",\n      \"cantidad\": 100,\n      \"unidad_medida\": \"gramos\"\n    },\n    {\n      \"nombre\": \"esencia de vainilla\",\n      \"cantidad\": 5,\n      \"unidad_medida\": \"ml\"\n    }\n  ],\n  \"listaPasosReceta\" : [\n    {\n        \"numero_paso\" : 1,\n        \"descripcion\" : \"Mezclá la leche tibia con una cucharadita de azúcar y la levadura y dejá reposar 10 minutos hasta que espume.\"\n    },\n    {\n        \"numero_paso\" : 2,\n        \"descripcion\" : \"En un bowl, mezclá harina, azúcar y sal.\"\n    },\n    {\n        \"numero_paso\" : 3,\n        \"descripcion\" : \"Agregá el huevo, 60 gr de manteca derretida y la mezcla de levadura.\"\n    },\n    {\n        \"numero_paso\" : 4,\n        \"descripcion\" : \"Amasá 8–10 minutos hasta obtener una masa suave.\"\n    },\n    {\n        \"numero_paso\" : 5,\n        \"descripcion\" : \"Tapá y dejá leudar 1 hora o hasta que duplique su tamaño.\"\n    },\n    {\n        \"numero_paso\" : 6,\n        \"descripcion\" : \"Mezclá el azúcar negra con la canela.\"\n    },\n    {\n        \"numero_paso\" : 7,\n        \"descripcion\" : \"Estirá la masa formando un rectángulo de aprox. 40×30 cm.\"\n    },\n    {\n        \"numero_paso\" : 8,\n        \"descripcion\" : \"Untá con 60 gr. de manteca pomada.\"\n    },\n    {\n        \"numero_paso\" : 9,\n        \"descripcion\" : \"Espolvoreá toda la mezcla de azúcar y canela.\"\n    },\n    {\n        \"numero_paso\" : 10,\n        \"descripcion\" : \"Enrollá la masa como pionono y cortá 12 rollitos iguales.\"\n    },\n    {\n        \"numero_paso\" : 11,\n        \"descripcion\" : \"Colocalos en una fuente con un poco de separación y dejá leudar 30–40 minutos más.\"\n    },\n    {\n        \"numero_paso\" : 12,\n        \"descripcion\" : \"Hornear a 180 °C por 20–25 minutos o hasta que estén dorados.\"\n    },\n    {\n        \"numero_paso\" : 13,\n        \"descripcion\" : \"Batí el queso crema con 40 gr de manteca blanda.\"\n    },\n    {\n        \"numero_paso\" : 14,\n        \"descripcion\" : \"Agregá el azúcar impalpable y la vainilla.\"\n    },\n    {\n        \"numero_paso\" : 15,\n        \"descripcion\" : \"Glaseá los rolls aún tibios para que absorban bien.\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Producto 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\" : \"Set Especias de Cocina Premium (x5 60g)\",\n        \"descripcion\" : \"Eleva tus platos con este set de 5 frascos de 60 gramos. Incluye merken, pimienta al limón, pimentón al ajo, paprika y nuez moscada molida.\",\n        \"marca\" : \"Burckingham\",\n        \"stock\" : 25,\n        \"precioUnitarioActual\" : 21700\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Producto 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\" : \"Tabla de Picar de Bambú\",\n        \"descripcion\" : \"¡Descrubí la diferencia de usar una tabla de calidad! No solo cuida tus cuchillos, sino que mantiene tu cocina impecable. Su tamaño ideal y material ecológico y duradero hacen esta tabla perfecta para tu cocina. Medidas: 33cm x 24cm x 1cm.\",\n        \"marca\" : \"Vonne\",\n        \"stock\" : 30,\n        \"precioUnitarioActual\" : 11607\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Producto 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\" : \"Set Platos de Entrada de Porcelana (x6)\",\n        \"descripcion\" : \"Descubre la elegancia atemporal y artesanía meticulosa de estos platos. Fechados en 1929, son verdaderas obras maestras. Los pequeños adornos a lo largo del borde realzan su belleza y añaden un toque de delicadeza al diseño.\",\n        \"marca\" : \"Limoges\",\n        \"stock\" : 4,\n        \"precioUnitarioActual\" : 46400\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Producto 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nombre\" : \"Juego de Té de Porcenala\",\n        \"descripcion\" : \"Este juego de pava, lechero y 6 tazas con platos de porcelana combina elegancia y funcionalidad para tus momentos de té. Es ideal para aquellos que que valoran la estetica en sus experiencias culinarias, aportando un toque de sofisticación en la mesa.\",\n        \"marca\" : \"Beautydeco\",\n        \"stock\" : 0,\n        \"precioUnitarioActual\" : 87900\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADOR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/productos/bajo/stock",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"bajo",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADOR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ventas/dia/2025-12-17",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"dia",
+						"2025-12-17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMINISTRADOR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/productos/editar/4?nuevaDescripcion=Pimienta negra molida, pimentón ahumado, orégano orgánico, ajo granulado y mix de pimientas. Set perfecto para elevar tus platos con aromas intensos.",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"editar",
+						"4"
+					],
+					"query": [
+						{
+							"key": "nuevaDescripcion",
+							"value": "Pimienta negra molida, pimentón ahumado, orégano orgánico, ajo granulado y mix de pimientas. Set perfecto para elevar tus platos con aromas intensos."
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

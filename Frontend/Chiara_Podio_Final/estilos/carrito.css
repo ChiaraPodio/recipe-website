@@ -1,0 +1,256 @@
+/* Crece el contenido cuando el carrito está vacío */
+.carrito-vacio-activo {
+    min-height: calc(95vh - 200px); 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+
+#carrito-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.carrito-vacio-titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #6a0f1f; 
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    background-color: #fcefe6;
+    border-radius: 12px;
+}
+
+.btn-agregar {
+    display: inline-block;
+    background-color: white; 
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 14px 26px;
+    border-radius: 12px;
+    border: none;
+    margin: 40px;
+    transition: transform .2s ease, background-color .2s ease;
+}
+
+.btn-agregar:hover {
+    background-color: pink;
+    transform: scale(1.05);
+}
+
+.carrito-wrapper {
+    background-color: antiquewhite;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px; 
+    margin: 15px; 
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.12);
+}
+
+.fondo-carrito {
+    background-color: #520b18; 
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+
+
+/* Item del carrito */
+.carrito-item {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    border: 1px solid #eee;
+    margin-bottom: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.carrito-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Imagen del producto */
+.carrito-item img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 18px;
+}
+
+/* Detalles del producto */
+.carrito-detalle h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.carrito-detalle p {
+    margin: 0;
+    color: #777;
+}
+
+/* Controles de cantidad */
+.carrito-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.carrito-cantidad button {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.carrito-cantidad button:hover {
+    background: #e2e2e2;
+}
+
+.carrito-cantidad span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Precio individual */
+.carrito-precio {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #6a0f1f;
+}
+
+/* Botón pagar */
+.carrito-pagar {
+    display: block;
+    width: 100%;
+    background-color: #6a0f1f;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 12px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    transition: transform .2s ease, background .2s;
+}
+
+.carrito-pagar:hover {
+    background-color: #520b18;
+    transform: scale(1.03);
+}
+
+/* Carrito vacío */
+.carrito-vacio {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.carrito-vacio .btn-primary {
+    background-color: #6a0f1f;
+    border: none;
+}
+
+.carrito-vacio .btn-primary:hover {
+    background-color: #520b18;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-left: 15px;
+    color: #a00;
+    transition: transform .2s ease, color .2s;
+}
+
+.btn-eliminar:hover {
+    color: #6a0f1f;
+    transform: scale(1.2);
+}
+
+/* Subtotal */
+.carrito-subtotal {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    font-weight: 700;
+    color: #6a0f1f;
+}
+
+/* Título carrito */
+.titulo-carrito {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #6a0f1f;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 20px;   /* padding superior pedido */
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+/* Campos inicio de sesión */
+.carrito-login {
+    background: #fcefe6;
+    padding: 22px;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.carrito-input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #d3b8b1;
+    font-size: 1rem;
+    outline: none;
+    transition: border .2s ease;
+}
+
+.carrito-input:focus {
+    border-color: #6a0f1f;
+}
+
+/* Texto bajo los campos */
+.carrito-msg {
+    font-size: 0.95rem;
+    color: #5a1a25;
+    text-align: center;
+}
+
+/* Link “Crea una cuenta” */
+.carrito-link {
+    color: #6a0f1f;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.carrito-link:hover {
+    color: #520b18;
+}

@@ -1,0 +1,258 @@
+/*Barra de Navegacion*/
+.navbar {
+    max-height: 100px;
+    padding: 2rem;
+    background-color: pink;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+/*Estilos generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+padding-top: 100px; 
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1rem; 
+    margin-top: 10px; 
+    color: #615151;
+}
+
+.seccion-texto {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Courgette", cursive;
+}
+
+.titulo-pagina {
+    font-family: "Aladin", system-ui;
+    font-size: 3rem;
+    border-bottom: 2px solid;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #a7846b; 
+    padding: 40px 10px;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    
+}
+
+.seccion-clara {
+    background-color: antiquewhite;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/*Pie de pagina*/
+footer {
+    min-height: 100px;
+    padding-bottom: 0.5rem;
+    background-color: pink;
+
+}
+
+.footer-texto {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid #9b0e2a; 
+    border-radius: 50%;
+
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: rgba(227, 40, 100, 0.74);
+}
+
+/*Autora*/
+.autora {
+    font-size: 15px;
+    color: rgb(73, 64, 64);
+    padding: 5px;
+}
+
+/*Banner Recetas y Productos*/
+.banner {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw); 
+}
+
+.img-banner {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.sobre-foto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.titulo-decorado {
+  border: 2px solid #e3c6b4;
+  padding: 20px 35px;
+  width: fit-content;
+  background: #fffaf4;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.titulo-decorado h1 {
+  font-family: "Georgia", serif;
+  font-size: 38px;
+  color: #6d1f2f;
+  margin: 0 0 8px;
+}
+
+.titulo-decorado p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 17px;
+  color: #6d615b;
+  margin: 0;
+}
+
+.img-receta {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.img-receta.fade-out {
+  opacity: 0;
+}
+
+/*Buscador*/
+
+.buscador-recetas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#buscador {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d8b3b3;
+  outline: none;
+  transition: 0.3s;
+}
+
+#buscador:focus {
+  border-color: #ec6c7a;
+  box-shadow: 0 0 6px rgba(236, 108, 122, 0.4);
+}
+
+
+/*Responsive*/
+@media (max-width: 992px) {
+    
+    .navbar-brand {
+        display: none;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    .navbar {
+        max-height: none;
+        padding: 1rem;
+    }
+
+    .img-flores {
+        height: 260px;
+    }
+
+    .sobre-foto {
+        top: 55%;
+    }
+}
+
+@media (max-width: 810px) and (min-width: 670px) {
+
+  .sobre-foto {
+    transform: translate(-50%, -50%) scale(0.93); 
+  }
+
+  .titulo-decorado {
+    padding: 18px 30px;
+  }
+
+  .titulo-decorado h1 {
+    font-size: 32px;
+  }
+
+  .titulo-decorado p {
+    font-size: 15px;
+  }
+
+  .img-banner {
+    height: 160px;
+  }
+}
+
+@media (max-width: 670px) {
+
+  .sobre-foto {
+    transform: translate(-50%, -50%) scale(0.80); 
+  }
+
+  .titulo-decorado {
+    padding: 14px 20px;
+  }
+
+  .titulo-decorado h1 {
+    font-size: 24px;
+  }
+
+  .titulo-decorado p {
+    font-size: 13px;
+  }
+
+  .img-banner {
+    height: 130px;
+  }
+}
+
+
