@@ -37,9 +37,9 @@ Frontend:
 
 - CRUD completo de recetas, productos, suscriptores y ventas.
 - Métodos adicionales de lógica de negocio, como:
-      - Control y actualización de stock.
-      - Cálculo de totales y subtotales.
-      - Obtención de métricas de ventas.
+      1 Control y actualización de stock,
+      2 Cálculo de totales y subtotales y
+      3 Obtención de métricas de ventas.
 - Endpoints REST invocados desde JavaScript en el frontend.
 - Carga inicial de datos realizada mediante Postman, simulando acciones de un administrador del sistema.
 
