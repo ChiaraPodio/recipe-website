@@ -24,7 +24,7 @@ Frontend:
 - Visualización de recetas almacenadas en la base de datos, con ingredientes, pasos, tiempo de preparación e imágenes ilustrativas.
 - Tienda de productos gastronómicos obtenidos desde el backend mediante solicitudes REST.
 - Buscador por nombre tanto en recetas como en productos.
-- Simulación de compra a través de un carrito interactivo:
+- Simulación de compra a través de un carrito interactivo.
 - Registro de usuarios mediante una sección de Suscripción.
 - Registro de ventas asociadas a suscriptores.
 - Navegación fluida entre las distintas secciones del sitio.
