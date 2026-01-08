@@ -43,5 +43,5 @@ Frontend:
 - Endpoints REST invocados desde JavaScript en el frontend.
 - Carga inicial de datos realizada mediante Postman, simulando acciones de un administrador del sistema.
 
-En el repositorio se incluyen las colecciones de Postman utilizadas para la carga de recetas y productos.
+En el repositorio se incluye la colección de Postman utilizada para la carga de recetas y productos.
 
