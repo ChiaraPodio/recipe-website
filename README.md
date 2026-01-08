@@ -19,6 +19,9 @@ Frontend:
 - Javascript
 - Bootstrap
 
+Testing:
+- Postman.
+
 ## Funcionalidades principales
 
 - Visualización de recetas almacenadas en la base de datos, con ingredientes, pasos, tiempo de preparación e imágenes ilustrativas.
