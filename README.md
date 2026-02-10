@@ -5,6 +5,7 @@ Consiste en un sitio web de cocina que permite visualizar recetas y simular la c
 El proyecto integra frontend y backend, trabajando con persistencia en base de datos.
 
 Disponible para ver en: https://chiarapodio.github.io/recipe-web/index.html
+
 El backend del proyecto esta dockerizado y corriendo en un servidor.
 
 ## Tecnologías utilizadas
