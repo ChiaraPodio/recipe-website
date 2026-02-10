@@ -1,5 +1,7 @@
 # Sitio Web de Cocina "Recetas de la Abuela"
 
+Proyecto dockerizado en render: https://chiarapodio.github.io/recipe-web/index.html
+
 Proyecto final de la Tecnicatura Universitaria en Programación (UTN).
 Consiste en un sitio web de cocina que permite visualizar recetas y simular la compra de productos gastronómicos, conectado a una API REST desarrollada en Java con Spring Boot.
 El proyecto integra frontend y backend, trabajando con persistencia en base de datos.
