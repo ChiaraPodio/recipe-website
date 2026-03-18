@@ -1,11 +1,10 @@
 # Sitio Web de Cocina "Recetas de la Abuela"
 
-Sitio web de cocina que permite visualizar recetas y simular la compra de productos gastronómicos, conectado a una API REST desarrollada en Java con Spring Boot.
-El proyecto integra frontend y backend, trabajando con persistencia en base de datos.
+Sitio web de cocina que permite a los usuarios explorar recetas y adquirir productos gastronómicos, integrando funcionalidades de catálogo, carrito de compras y registro de ventas. Es proyecto full stack que ofrece una experiencia unificada entre contenido culinario y e-commerce, mediante la integración de un frontend interactivo con una API REST desarrollada en Java con Spring Boot y persistencia en base de datos.
 
-Disponible para ver en: https://chiarapodio.github.io/recipe-web/index.html
+Sitio disponible en: https://chiarapodio.github.io/recipe-web/index.html
 
-El backend del proyecto esta dockerizado y corriendo en un servidor.
+El backend se encuentra dockerizado y desplegado en un servidor, con datos precargados de recetas y productos en una base de datos alojada en Render, lo que permite una navegación interactiva por el sitio.
 
 ## Tecnologías utilizadas
 
@@ -50,4 +49,3 @@ Testing:
 - Carga inicial de datos realizada mediante Postman, simulando acciones de un administrador del sistema.
 
 En el repositorio se incluye la colección de Postman utilizada para la carga de recetas y productos.
-
