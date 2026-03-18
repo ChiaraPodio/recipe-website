@@ -10,7 +10,7 @@ function cargarReceta() {
         return;
     }
 
-    fetch(`http://localhost:8080/receta/${codigo_receta}`)
+    fetch(`https://api-recipe-website.onrender.com/receta/${codigo_receta}`)
         .then(res => res.json())
         .then(receta => mostrarReceta(receta))
         .catch(err => console.error("Error al obtener receta:", err));

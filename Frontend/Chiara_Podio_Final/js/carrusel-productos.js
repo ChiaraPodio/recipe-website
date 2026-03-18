@@ -9,7 +9,7 @@ const imagenesPorProducto = {
 // Carrusel Promo Tienda
 async function cargarCarruselTienda() {
     try {
-        const response = await fetch("http://localhost:8080/productos");
+        const response = await fetch("https://api-recipe-website.onrender.com/productos");
         const productos = await response.json();
 
         const contenedor = document.getElementById("carousel-tienda-inner");

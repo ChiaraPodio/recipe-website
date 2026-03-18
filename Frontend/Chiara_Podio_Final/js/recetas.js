@@ -65,7 +65,7 @@ const imagenesPorReceta = {
 let recetasOriginales = [];
 
 function cargarRecetas() {
-  fetch("http://localhost:8080/recetas")
+  fetch("https://api-recipe-website.onrender.com/recetas")
     .then(response => response.json())
     .then(data => {
       recetasOriginales = data;   

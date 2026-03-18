@@ -14,7 +14,7 @@ const imagenesPorReceta = {
     "Rolls de Canela": ["rolls-canela.jpg","rolls-canela2.jpg","rolls-canela3.jpg"] };
 
 function iniciarCarrusel() {
-    fetch("http://localhost:8080/recetas")
+    fetch("https://api-recipe-website.onrender.com/recetas")
         .then(res => res.json())
         .then(data => {
             const track = document.getElementById("carousel-track");

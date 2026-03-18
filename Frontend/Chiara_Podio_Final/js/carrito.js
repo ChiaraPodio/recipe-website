@@ -163,7 +163,7 @@ async function procesarPago() {
 
     try {
         // Obtener todos los suscriptores
-        const resp = await fetch("http://localhost:8080/suscriptores");
+        const resp = await fetch("https://api-recipe-website.onrender.com/suscriptores");
         const suscriptores = await resp.json();
 
         // Buscar usuario por email y password
@@ -186,7 +186,7 @@ const ventaDTO = {
 
 
         // Enviar venta
-        const respVenta = await fetch("http://localhost:8080/ventas/crear", {
+        const respVenta = await fetch("https://api-recipe-website.onrender.com/ventas/crear", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

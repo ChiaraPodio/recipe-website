@@ -45,7 +45,7 @@ const imagenesPorProducto = {
 };
 
 
-fetch(`http://localhost:8080/producto/${idProducto}`)
+fetch(`https://api-recipe-website.onrender.com/producto/${idProducto}`)
     .then(res => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();

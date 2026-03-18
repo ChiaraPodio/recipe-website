@@ -59,7 +59,7 @@ document.getElementById("formSuscripcion").addEventListener("submit", function (
     console.log("Enviando:", suscriptorDTO);
 
     // Envío al backend
-    fetch("http://localhost:8080/suscriptor/crear", {
+    fetch("https://api-recipe-website.onrender.com/suscriptor/crear", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(suscriptorDTO)

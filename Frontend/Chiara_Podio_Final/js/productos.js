@@ -76,7 +76,7 @@ function renderizarProductos(lista) {
 
 
 // Cargar productos desde el backend
-fetch("http://localhost:8080/productos")
+fetch("https://api-recipe-website.onrender.com/productos")
     .then(res => res.json())
     .then(productos => {
 
