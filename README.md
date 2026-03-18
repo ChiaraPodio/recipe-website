@@ -1,7 +1,6 @@
 # Sitio Web de Cocina "Recetas de la Abuela"
 
-Proyecto final de la Tecnicatura Universitaria en Programación (UTN).
-Consiste en un sitio web de cocina que permite visualizar recetas y simular la compra de productos gastronómicos, conectado a una API REST desarrollada en Java con Spring Boot.
+Sitio web de cocina que permite visualizar recetas y simular la compra de productos gastronómicos, conectado a una API REST desarrollada en Java con Spring Boot.
 El proyecto integra frontend y backend, trabajando con persistencia en base de datos.
 
 Disponible para ver en: https://chiarapodio.github.io/recipe-web/index.html
@@ -29,7 +28,7 @@ Testing:
 ## Funcionalidades principales
 
 - Visualización de recetas almacenadas en la base de datos, con ingredientes, pasos, tiempo de preparación e imágenes ilustrativas.
-- Tienda de productos gastronómicos obtenidos desde el backend mediante solicitudes REST.
+- Tienda de productos gastronómicos, obtenidos desde el backend mediante solicitudes REST.
 - Buscador por nombre tanto en recetas como en productos.
 - Simulación de compra a través de un carrito interactivo.
 - Registro de usuarios mediante una sección de Suscripción.
