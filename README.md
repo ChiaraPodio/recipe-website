@@ -2,7 +2,7 @@
 
 Sitio web de cocina que permite a los usuarios explorar recetas y adquirir productos gastronómicos, integrando funcionalidades de catálogo, carrito de compras y registro de ventas. Es un proyecto full stack que ofrece una experiencia unificada entre contenido culinario y e-commerce, mediante la integración de un frontend interactivo con una API REST desarrollada en Java con Spring Boot y persistencia en base de datos.
 
-Sitio disponible en: https://chiarapodio.github.io/recipe-web/index.html
+Demo del sitio disponible en: https://chiarapodio.github.io/recipe-web/index.html
 
 El backend se encuentra dockerizado y desplegado en un servidor, con datos precargados de recetas y productos en una base de datos alojada en Render, lo que permite una navegación interactiva por el sitio.
 
@@ -40,13 +40,13 @@ Testing:
 
 ## Funcionalidades del backend (API)
 
-- CRUD completo de recetas, productos, suscriptores y ventas.
-- Métodos adicionales de lógica de negocio, como:
-      1 Control y actualización de stock,
-      2 Cálculo de totales y subtotales y
-      3 Obtención de métricas de ventas.
-- Endpoints REST invocados desde JavaScript en el frontend.
-- Carga inicial de datos realizada mediante Postman, simulando acciones de un administrador del sistema.
+* CRUD completo de recetas, productos, suscriptores y ventas.
+* Métodos adicionales de lógica de negocio, como:
+    - 1 Control y actualización de stock,
+    - 2 Cálculo de totales y subtotales y
+    - 3 Obtención de métricas de ventas.
+* Endpoints REST invocados desde JavaScript en el frontend.
+* Carga inicial de datos realizada mediante Postman, simulando acciones de un administrador del sistema.
 
 ## Diagrama del modelo
 El siguiente diagrama representa las principales entidades del sistema y sus relaciones:
