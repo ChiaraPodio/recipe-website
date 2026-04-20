@@ -13,7 +13,7 @@ Backend:
 - Spring Boot
 - Maven
 - JPA / Hibernate
-- MySQL
+- PostgreSQL
 
 Frontend:
 - HTML5
