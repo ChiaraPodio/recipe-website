@@ -34,7 +34,7 @@ Testing:
 - Registro de ventas asociadas a suscriptores.
 - Navegación fluida entre las distintas secciones del sitio.
 - Diseño visual intuitivo, atractivo y responsivo, utilizando el sistema de grillas de Bootstrap.
-- Persistencia de datos en base de datos MySQL.
+- Persistencia de datos en base de datos PostgreSQL.
 - Uso de arquitectura multicapa.
 - Uso de DTOs para optimizar la comunicación frontend-backend, ocultar datos sensibles y centralizar la lógica de negocio.
 
